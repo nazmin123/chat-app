@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+
+
+    <View
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/header_bg"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        android:padding="16dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create a new account"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/ic_user"
+            android:padding="10dp"
+            android:drawablePadding="16dp"
+            android:hint="Username"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/ic_email"
+            android:padding="10dp"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+          android:padding="10dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:drawablePadding="16dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="Password"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="register"
+            android:id="@+id/btn_register"
+           app:cornerRadius="10dp"
+            android:visibility="visible"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"/>
+        <ProgressBar
+            android:id="@+id/register_progress"
+            android:layout_width="40dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/circle_white"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+
+            />
+
+    </LinearLayout>
+
+<View
+    android:id="@+id/bottom_view"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/bottom_bg"/>
+
+</RelativeLayout>

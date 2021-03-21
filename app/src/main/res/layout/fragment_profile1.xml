@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<View
+    android:id="@+id/view_header"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/wave1"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profile_image"
+       android:layout_below="@id/view_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-80dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="username"-->
+<!--        android:layout_below="@id/profile_image"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:textColor="@color/colorPrimary"-->
+<!--        android:textStyle="bold"-->
+<!--        android:id="@+id/username"-->
+<!--        android:textSize="18sp"-->
+<!--        android:layout_marginBottom="20dp"/>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_below="@id/profile_image">
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_bg"
+            android:src="@drawable/ic_user"
+            android:layout_marginEnd="40dp"
+            app:tint="#fff"
+            android:padding="10dp"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:layout_toEndOf="@id/user_icon"
+               android:layout_marginTop="10dp"
+                android:id="@+id/username"
+                android:textSize="15sp"
+                />
+
+        <ImageView
+            android:id="@+id/email_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_bg"
+            android:src="@drawable/ic_email"
+            app:tint="#fff"
+            android:padding="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_below="@id/user_icon"
+            android:layout_marginTop="40dp"
+            />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:layout_toEndOf="@id/email_icon"
+            android:layout_below="@id/username"
+            android:layout_marginTop="60dp"
+            android:textSize="15dp"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
